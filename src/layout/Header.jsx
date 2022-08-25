@@ -1,18 +1,5 @@
-import {
-  Box,
-  IconButton,
-  Icon,
-  Flex,
-  Text,
-  HStack,
-  Link,
-} from "@chakra-ui/react"
+import { Icon, Flex, Text, HStack, Link } from "@chakra-ui/react"
 import { IoMdMenu } from "react-icons/io"
-
-// Links
-// - Menu
-// - About
-// - Order
 
 const Header = () => {
   return (
