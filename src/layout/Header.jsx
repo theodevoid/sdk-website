@@ -1,12 +1,25 @@
-import { Box, IconButton, Icon, Flex, Text } from "@chakra-ui/react"
+import {
+  Box,
+  IconButton,
+  Icon,
+  Flex,
+  Text,
+  HStack,
+  Link,
+} from "@chakra-ui/react"
 import { IoMdMenu } from "react-icons/io"
+
+// Links
+// - Menu
+// - About
+// - Order
 
 const Header = () => {
   return (
     <Flex
       padding={{
         base: "24px 16px",
-        lg: "24px 48px",
+        lg: "24px 64px",
       }}
       backgroundColor="blackAlpha.900"
       alignItems="center"
@@ -28,7 +41,19 @@ const Header = () => {
         focusable
         boxSize="8"
         as={IoMdMenu}
+        display={{
+          lg: "none",
+        }}
       />
+      <HStack
+        display={{ base: "none", lg: "initial" }}
+        color="white"
+        spacing={10}
+      >
+        <Link>Menu</Link>
+        <Link>About</Link>
+        <Link>Order</Link>
+      </HStack>
     </Flex>
   )
 }
