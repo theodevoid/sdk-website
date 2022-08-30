@@ -19,7 +19,10 @@ import MenuItem from "./MenuItem"
 
 const Menu = () => {
   return (
-    <Container maxW="container.lg" py={{ lg: "32", base: "14" }}>
+    <Container
+      maxW={{ lg: "container.lg", base: "container.sm" }}
+      py={{ lg: "32", base: "14" }}
+    >
       <CategoryTitle mb={{ lg: "10", base: "4" }}>Kopi Pasir</CategoryTitle>
       <Grid
         gridTemplateColumns={{ lg: "repeat(2, 1fr)", base: "repeat(1, 1fr)" }}
