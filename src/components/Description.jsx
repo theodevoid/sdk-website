@@ -4,15 +4,11 @@ const Description = () => {
   return (
     <Box backgroundColor="blackAlpha.900">
       <Container maxW="container.lg" py={{ lg: "32", base: "14" }}>
-        <Flex
-          color="white"
-          direction="row"
-          justifyContent={{ base: "center", lg: "start" }}
-        >
+        <Flex color="white" direction="row" justifyContent="start">
           <Text
-            maxWidth={{ base: "410px", lg: "756px" }}
+            maxWidth={{ base: "410px", md: "756px" }}
             textTransform="uppercase"
-            fontSize="3xl"
+            fontSize={{ lg: "5xl", base: "3xl" }}
             fontWeight="bold"
             lineHeight="1.25"
           >
